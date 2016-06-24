@@ -61,4 +61,9 @@ define(function (require, exports, module) {
     name: 'ESLint',
     scanFileAsync: lint
   });
+  
+  CodeInspection.register(LanguageManager.getLanguageForExtension('jsx').getId(), {
+    name: 'ESLint',
+    scanFileAsync: lint
+  });
 });
